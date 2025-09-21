@@ -4,7 +4,7 @@ function Schema() {
     const [schema, setSchema] = useState(null);
 
     const fetchSchema = async () => {
-        const res = await fetch("http://localhost:4000/api/schema");
+        const res = await fetch("https://cost-system-backend.onrender.com/api/schema");
         const data = await res.json();
         setSchema(data);
     };

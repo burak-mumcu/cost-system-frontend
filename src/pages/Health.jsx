@@ -5,7 +5,7 @@ function Health() {
 
     const fetchHealth = async (detailed = false) => {
         const res = await fetch(
-            `http://localhost:4000/api/health?detailed=${detailed}`
+            `https://cost-system-backend.onrender.com/api/health?detailed=${detailed}`
         );
         const data = await res.json();
         setHealth(data);
